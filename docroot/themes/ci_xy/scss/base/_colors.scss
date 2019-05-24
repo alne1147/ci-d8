@@ -1,0 +1,1447 @@
+/* COLORS
+ * These colors are set for the backgrounds for rows and cards
+
+ * 1. Brand Colorado Primary
+ * 2. Brand Colorado Secondary
+ */
+
+// Function to change text color based on selected background color
+@function set-title-text-color35($color) {
+  @if (lightness($color) > 35) {
+    @return #000000!important; // Lighter background, return dark color
+  } @else {
+    @return #ffffff!important; // Darker background, return light color
+  }
+}
+@function set-title-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000!important; // Lighter background, return dark color
+  } @else {
+    @return #ffffff!important; // Darker background, return light color
+  }
+}
+
+// [1]
+// Brand Green
+.color__brand-green--strong,
+.paragraph--type--card-icon.color__brand-green--strong {
+  background: rgba($color-brand-green, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body{
+    color: set-title-text-color($color-brand-green);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-green);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-green);
+    border-bottom: 1px solid set-title-text-color($color-brand-green);
+  }
+}
+.color__brand-green--light {
+  background: rgba($color-brand-green, .5)
+}
+.color__brand-green--slight {
+  background: rgba($color-brand-green, .2)
+}
+// Brand Slate
+.color__brand-slate--strong,
+.paragraph--type--card-icon.color__brand-slate--strong {
+  background: rgba($color-brand-slate, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-brand-slate);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-slate);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-slate);
+    border-bottom: 1px solid set-title-text-color($color-brand-slate);
+  }
+}
+.color__brand-slate--light {
+  background: rgba($color-brand-slate, .5)
+}
+.color__brand-slate--slight {
+  background: rgba($color-brand-slate, .2)
+}
+.color__brand-slate--dark {
+  background: rgba($color-black, .45)
+}
+// Brand Silver
+.color__brand-silver--strong,
+.paragraph--type--card-icon.color__brand-silver--strong {
+  background: rgba($color-brand-silver, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-brand-silver);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-silver);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-silver);
+    border-bottom: 1px solid set-title-text-color($color-brand-silver);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__brand-silver--light {
+  background: rgba($color-brand-silver, .5)
+}
+.color__brand-silver--slight {
+  background: rgba($color-brand-silver, .2)
+}
+// Brand Orange
+.color__brand-orange--strong,
+.paragraph--type--card-icon.color__brand-orange--strong {
+  background: rgba($color-brand-orange, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-brand-orange);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-orange);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-orange);
+    border-bottom: 1px solid set-title-text-color($color-brand-orange);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__brand-orange--light {
+  background: rgba($color-brand-orange, .5)
+}
+.color__brand-orange--slight {
+  background: rgba($color-brand-orange, .2)
+}
+// Brand Brown
+.color__brand-brown--strong,
+.paragraph--type--card-icon.color__brand-brown--strong {
+  background: rgba($color-brand-brown, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-brand-brown);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-brown);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-brown);
+    border-bottom: 1px solid set-title-text-color($color-brand-brown);
+  }
+}
+.color__brand-brown--light {
+  background: rgba($color-brand-brown, .5)
+}
+.color__brand-brown--slight {
+  background: rgba($color-brand-brown, .2)
+}
+// Brand Blue
+.color__brand-blue--strong,
+.paragraph--type--card-icon.color__brand-blue--strong {
+  background: rgba($color-brand-blue, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-brand-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brand-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-brand-blue);
+    border-bottom: 1px solid set-title-text-color($color-brand-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__brand-blue--light {
+  background: rgba($color-brand-blue, .5)
+}
+.color__brand-blue--slight {
+  background: rgba($color-brand-blue, .2)
+}
+
+// Black, White
+// Black
+.color__black--strong,
+.paragraph--type--card-icon.color__black--strong {
+  background: rgba($color-black, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-black);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-black);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-black);
+    border-bottom: 1px solid set-title-text-color($color-black);
+  }
+}
+.color__black--light {
+  background: rgba($color-black, .5)
+}
+.color__black--slight {
+  background: rgba($color-black, 0.2)
+}
+// White
+.color__white--strong,
+.paragraph--type--card-icon.color__white--strong {
+  background: rgba($color-white, 1);
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link {
+    color: set-title-text-color($color-white);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-white);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-white);
+    border-bottom: 1px solid set-title-text-color($color-white);
+  }
+}
+.color__white--light {
+  background: rgba($color-white, .5)
+}
+.color__white--slight {
+  background: rgba($color-white, .2)
+}
+
+// [2]
+// Blacks, Browns and Greys
+
+// Evening
+.color__evening--strong,
+.paragraph--type--card-icon.color__evening--strong {
+  background: rgba($color-evening, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-evening);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-evening);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-evening);
+    border-bottom: 1px solid set-title-text-color($color-evening);
+  }
+}
+.color__evening--light {
+  background: rgba($color-evening, .5)
+}
+.color__evening--slight {
+  background: rgba($color-evening, .2)
+}
+// Charcoal
+.color__charcoal--strong,
+.paragraph--type--card-icon.color__charcoal--strong {
+  background: rgba($color-charcoal, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-charcoal);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-charcoal);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-charcoal);
+    border-bottom: 1px solid set-title-text-color($color-charcoal);
+  }
+}
+.color__charcoal--light {
+  background: rgba($color-charcoal, .5)
+}
+.color__charcoal--slight {
+  background: rgba($color-charcoal, .2)
+}
+// Blackboard
+.color__blackboard--strong,
+.paragraph--type--card-icon.color__blackboard--strong {
+  background: rgba($color-blackboard, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-field-row-title,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-blackboard);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-blackboard);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-blackboard);
+    border-bottom: 1px solid set-title-text-color($color-blackboard);
+  }
+}
+.color__blackboard--light {
+  background: rgba($color-blackboard, .5)
+}
+.color__blackboard--slight {
+  background: rgba($color-blackboard, .2)
+}
+// Grey Sand
+.color__grey-sand--strong,
+.paragraph--type--card-icon.color__grey-sand--strong {
+  background: rgba($color-grey-sand, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-grey-sand);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-grey-sand);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-grey-sand);
+    border-bottom: 1px solid set-title-text-color($color-grey-sand);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__grey-sand--light {
+  background: rgba($color-grey-sand, .5)
+}
+.color__grey-sand--slight {
+  background: rgba($color-grey-sand, .2)
+}
+// Sleek Grey
+.color__sleek-grey--strong,
+.paragraph--type--card-icon.color__sleek-grey--strong {
+  background: rgba($color-sleek-grey, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-sleek-grey);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sleek-grey);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-sleek-grey);
+    border-bottom: 1px solid set-title-text-color($color-sleek-grey);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__sleek-grey--light {
+  background: rgba($color-sleek-grey, .5)
+}
+.color__sleek-grey--slight {
+  background: rgba($color-sleek-grey, .2)
+}
+// Lemon Grass
+.color__lemon-grass--strong,
+.paragraph--type--card-icon.color__lemon-grass--strong {
+  background: rgba($color-lemon-grass, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-lemon-grass);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-lemon-grass);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-lemon-grass);
+    border-bottom: 1px solid set-title-text-color($color-lemon-grass);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__lemon-grass--light {
+  background: rgba($color-lemon-grass, .5)
+}
+.color__lemon-grass--slight {
+  background: rgba($color-lemon-grass, .2)
+}
+// Walnut
+.color__walnut--strong,
+.paragraph--type--card-icon.color__walnut--strong {
+  background: rgba($color-walnut, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-walnut);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-walnut);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-walnut);
+    border-bottom: 1px solid set-title-text-color($color-walnut);
+  }
+}
+.color__walnut--light {
+  background: rgba($color-walnut, .5)
+}
+.color__walnut--slight {
+  background: rgba($color-walnut, .2)
+}
+// Walnut
+.color__beige--strong,
+.paragraph--type--card-icon.color__beige--strong {
+  background: rgba($color-beige, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-beige);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-beige);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-beige);
+    border-bottom: 1px solid set-title-text-color($color-beige);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__beige--light {
+  background: rgba($color-beige, .5)
+}
+.color__beige--slight {
+  background: rgba($color-beige, .2)
+}
+
+// Reds, Oranges, and Yellows
+// Spice
+.color__spice--strong,
+.paragraph--type--card-icon.color__spice--strong {
+  background: rgba($color-spice, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-spice);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-spice);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-spice);
+    border-bottom: 1px solid set-title-text-color35($color-spice);
+  }
+}
+.color__spice--light {
+  background: rgba($color-spice, .5)
+}
+.color__spice--slight {
+  background: rgba($color-spice, .2)
+}
+// Brick Red
+.color__brick-red--strong,
+.paragraph--type--card-icon.color__brick-red--strong {
+  background: rgba($color-brick-red, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-brick-red);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-brick-red);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-brick-red);
+    border-bottom: 1px solid set-title-text-color35($color-brick-red);
+  }
+}
+.color__brick-red--light {
+  background: rgba($color-brick-red, .5)
+}
+.color__brick-red--slight {
+  background: rgba($color-brick-red, .2)
+}
+// Scarlet
+.color__scarlet--strong,
+.paragraph--type--card-icon.color__scarlet--strong {
+  background: rgba($color-scarlet, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-scarlet);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-scarlet);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-scarlet);
+    border-bottom: 1px solid set-title-text-color($color-scarlet);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__scarlet--light {
+  background: rgba($color-scarlet, .5)
+}
+.color__scarlet--slight {
+  background: rgba($color-scarlet, .2)
+}
+// Cognac
+.color__cognac--strong,
+.paragraph--type--card-icon.color__cognac--strong {
+  background: rgba($color-cognac, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-cognac);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-cognac);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-cognac);
+    border-bottom: 1px solid set-title-text-color($color-cognac);
+  }
+}
+.color__cognac--light {
+  background: rgba($color-cognac, .5)
+}
+.color__cognac--slight {
+  background: rgba($color-cognac, .2)
+}
+// Tiger Orange
+.color__tiger-orange--strong,
+.paragraph--type--card-icon.color__tiger-orange--strong {
+  background: rgba($color-tiger-orange, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-tiger-orange);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-tiger-orange);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-tiger-orange);
+    border-bottom: 1px solid set-title-text-color35($color-tiger-orange);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__tiger-orange--light {
+  background: rgba($color-tiger-orange, .5)
+}
+.color__tiger-orange--slight {
+  background: rgba($color-tiger-orange, .2)
+}
+// Wheat
+.color__wheat--strong,
+.paragraph--type--card-icon.color__wheat--strong {
+  background: rgba($color-wheat, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-wheat);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-wheat);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-wheat);
+    border-bottom: 1px solid set-title-text-color35($color-wheat);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__wheat--light {
+  background: rgba($color-wheat, .5)
+}
+.color__wheat--slight {
+  background: rgba($color-wheat, .2)
+}
+// Sunflower
+.color__sunflower--strong,
+.paragraph--type--card-icon.color__sunflower--strong {
+  background: rgba($color-sunflower, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-sunflower);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sunflower);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-sunflower);
+    border-bottom: 1px solid set-title-text-color35($color-sunflower);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__sunflower--light {
+  background: rgba($color-sunflower, .5)
+}
+.color__sunflower--slight {
+  background: rgba($color-sunflower, .2)
+}
+// Lemon
+.color__lemon--strong,
+.paragraph--type--card-icon.color__lemon--strong {
+  background: rgba($color-lemon, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-lemon);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-lemon);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-lemon);
+    border-bottom: 1px solid set-title-text-color($color-lemon);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__lemon--light {
+  background: rgba($color-lemon, .5)
+}
+.color__lemon--slight {
+  background: rgba($color-lemon, .2)
+}
+
+// Purples and blues
+.color__eggplant--strong,
+.paragraph--type--card-icon.color__eggplant--strong {
+  background: rgba($color-eggplant, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-eggplant);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-eggplant);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-eggplant);
+    border-bottom: 1px solid set-title-text-color($color-eggplant);
+  }
+}
+.color__eggplant--light {
+  background: rgba($color-eggplant, .5)
+}
+.color__eggplant--slight {
+  background: rgba($color-eggplant, .2)
+}
+// Grape
+.color__grape--strong,
+.paragraph--type--card-icon.color__grape--strong {
+  background: rgba($color-grape, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-title,
+  .field--name-bp-modal-button-text,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-grape);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-grape);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-grape);
+    border-bottom: 1px solid set-title-text-color($color-grape);
+  }
+}
+.color__grape--light {
+  background: rgba($color-grape, .5)
+}
+.color__grape--slight {
+  background: rgba($color-grape, .2)
+}
+// Ink
+.color__ink--strong,
+.paragraph--type--card-icon.color__ink--strong {
+  background: rgba($color-ink, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-ink);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-ink);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-ink);
+    border-bottom: 1px solid set-title-text-color($color-ink);
+  }
+}
+.color__ink--light {
+  background: rgba($color-ink, .5)
+}
+.color__ink--slight {
+  background: rgba($color-ink, .2)
+}
+// Sky Blue
+.color__sky-blue--strong,
+.paragraph--type--card-icon.color__sky-blue--strong {
+  background: rgba($color-sky-blue, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-sky-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-sky-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-sky-blue);
+    border-bottom: 1px solid set-title-text-color35($color-sky-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__sky-blue--light {
+  background: rgba($color-sky-blue, .5)
+}
+.color__sky-blue--slight {
+  background: rgba($color-sky-blue, .2)
+}
+// Pacific Blue
+.color__pacific-blue--strong,
+.paragraph--type--card-icon.color__pacific-blue--strong {
+  background: rgba($color-pacific-blue, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-pacific-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-pacific-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-pacific-blue);
+    border-bottom: 1px solid set-title-text-color35($color-pacific-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__pacific-blue--light {
+  background: rgba($color-pacific-blue, .5)
+}
+.color__pacific-blue--slight {
+  background: rgba($color-pacific-blue, .2)
+}
+// Aqua
+.color__aqua--strong,
+.paragraph--type--card-icon.color__aqua--strong {
+  background: rgba($color-aqua, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-aqua);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-aqua);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-aqua);
+    border-bottom: 1px solid set-title-text-color35($color-aqua);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__aqua--light {
+  background: rgba($color-aqua, .5)
+}
+.color__aqua--slight {
+  background: rgba($color-aqua, .2)
+}
+// Pastel Blue
+.color__pastel-blue--strong,
+.paragraph--type--card-icon.color__pastel-blue--strong {
+  background: rgba($color-pastel-blue, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-pastel-blue);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-pastel-blue);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-pastel-blue);
+    border-bottom: 1px solid set-title-text-color($color-pastel-blue);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__pastel-blue--light {
+  background: rgba($color-pastel-blue, .5)
+}
+.color__pastel-blue--slight {
+  background: rgba($color-pastel-blue, .2)
+}
+// Ice
+.color__ice--strong,
+.paragraph--type--card-icon.color__ice--strong {
+  background: rgba($color-ice, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-ice);
+  }
+  // Accordion Carets
+  .accordion-toggle:before,
+  .accordion-toggle:after {
+    background-color: set-title-text-color($color-ice);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-ice);
+    border-bottom: 1px solid set-title-text-color($color-ice);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__ice--light {
+  background: rgba($color-ice, .5)
+}
+.color__ice--slight {
+  background: rgba($color-ice, .2)
+}
+
+// Greens
+// Forest
+.color__forest--strong,
+.paragraph--type--card-icon.color__forest--strong {
+  background: rgba($color-forest, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-forest);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-forest);
+    border-bottom: 1px solid set-title-text-color($color-forest);
+  }
+}
+.color__forest--light {
+  background: rgba($color-forest, .5)
+}
+.color__forest--slight {
+  background: rgba($color-forest, .2)
+}
+// Neon Green
+.color__neon-green--strong,
+.paragraph--type--card-icon.color__neon-green--strong {
+  background: rgba($color-neon-green, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-neon-green);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-neon-green);
+    border-bottom: 1px solid set-title-text-color35($color-neon-green);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__neon-green--light {
+  background: rgba($color-neon-green, .5)
+}
+.color__neon-green--slight {
+  background: rgba($color-neon-green, .2)
+}
+// Cucumber
+.color__cucumber--strong,
+.paragraph--type--card-icon.color__cucumber--strong {
+  background: rgba($color-cucumber, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color35($color-cucumber);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color35($color-cucumber);
+    border-bottom: 1px solid set-title-text-color35($color-cucumber);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__cucumber--light {
+  background: rgba($color-cucumber, .5)
+}
+.color__cucumber--slight {
+  background: rgba($color-cucumber, .2)
+}
+// Fern
+.color__fern--strong,
+.paragraph--type--card-icon.color__fern--strong {
+  background: rgba($color-fern, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-fern);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-fern);
+    border-bottom: 1px solid set-title-text-color($color-fern);
+  }
+}
+.color__fern--light {
+  background: rgba($color-fern, .5)
+}
+.color__fern--slight {
+  background: rgba($color-fern, .2)
+}
+// Mineral Green
+.color__mineral-green--strong,
+.paragraph--type--card-icon.color__mineral-green--strong {
+  background: rgba($color-mineral-green, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-field-row-title,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .panel-title > a,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-mineral-green);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-mineral-green);
+    border-bottom: 1px solid set-title-text-color($color-mineral-green);
+  }
+}
+.color__mineral-green--light {
+  background: rgba($color-mineral-green, .5)
+}
+.color__mineral-green--slight {
+  background: rgba($color-mineral-green, .2)
+}
+// Pine Needle
+.color__pine-needle--strong,
+.paragraph--type--card-icon.color__pine-needle--strong {
+  background: rgba($color-pine-needle, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-pine-needle);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-pine-needle);
+    border-bottom: 1px solid set-title-text-color($color-pine-needle);
+  }
+}
+.color__pine-needle--light {
+  background: rgba($color-pine-needle, .5)
+}
+.color__pine-needle--slight {
+  background: rgba($color-pine-needle, .2)
+}
+// corduroy
+.color__corduroy--strong,
+.paragraph--type--card-icon.color__corduroy--strong {
+  background: rgba($color-corduroy, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-corduroy);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-corduroy);
+    border-bottom: 1px solid set-title-text-color($color-corduroy);
+  }
+}
+.color__corduroy--light {
+  background: rgba($color-corduroy, .5)
+}
+.color__corduroy--slight {
+  background: rgba($color-corduroy, .2)
+}
+// Sea Form
+.color__sea-foam--strong,
+.paragraph--type--card-icon.color__sea-foam--strong {
+  background: rgba($color-sea-foam, 1)!important;
+  .field--name-field-card-title,
+  .field--name-field-card-body,
+  .field--name-bp-modal-button-text,
+  .field--name-bp-modal-title,
+  .modal--close,
+  .sf-menu a,
+  .field--name-field-icon svg,
+  .paragraph__card--icon-link,
+  .footer__global-footer--links li,
+  .footer__global-footer--links li a,
+  &.jumbo_slide__title,
+  &.jumbo_slide__body {
+    color: set-title-text-color($color-sea-foam);
+  }
+  .field--name-field-card-body a {
+    color: set-title-text-color($color-sea-foam);
+    border-bottom: 1px solid set-title-text-color($color-sea-foam);
+  }
+  .footer__global-footer .logo--cogov {
+    background-image: url(../images/cogov_C_logo-black.svg)!important;
+  }
+}
+.color__sea-foam--light {
+  background: rgba($color-sea-foam, .5)
+}
+.color__sea-foam--slight {
+  background: rgba($color-sea-foam, .2)
+}
+// Clear
+.color__clear {
+  background: transparent;
+}

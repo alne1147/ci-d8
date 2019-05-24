@@ -1,0 +1,142 @@
+
+/* Paragraph Accordion / ckeditor Accordion
+ 1. paragraph accordion
+ 2. ckeditor accordion
+ */
+
+// [1]
+.paragraph--type--bp-accordion {
+  float: left;
+  width: 100%;
+  .panel {
+    border: none;
+    border-radius: inherit;
+    box-shadow: none;
+    .paragraph--type--section-body {
+      margin-bottom: 1rem;
+    }
+    &.panel-default {
+      position: relative;
+      .panel-heading {
+        border-bottom: 0;
+        //border-radius: 3px; 
+        border-radius: 0;
+        margin-bottom: 1rem;
+      }
+    }
+    .panel-heading a:after {
+      display: none!important; // Removes default Bootstrap +/-
+    }
+    .panel-title {
+      position: relative;
+      a[aria-expanded=false] {
+        > .accordion-toggle {
+          &:before {
+            -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+          }
+          &:after {
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+          }
+        }
+      }
+      .accordion-toggle {
+        display: inline-block;
+        position: absolute;
+        padding: 0 10px;
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        top: calc(50% - 1px);
+        left: 11px;
+        &:before,
+        &:after {
+          background: #fff;
+          -webkit-transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          content: "";
+          display: block;
+          height: 2px;
+          position: absolute;
+          width: 10px;
+          z-index: 0;
+          left: 0;
+          top: 0;
+          -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+          will-change: transform;
+        }
+        &:before {
+          left:13px;
+          transform: rotate(45deg);
+        }
+        &:after {
+          right:13px;
+          left:auto;
+          transform: rotate(-45deg);
+        }
+      }
+      > a {
+        display: block;
+        padding-left: 35px;
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// [2]
+.ckeditor-accordion-container {
+  > dl {
+    border:0!important;
+    margin-bottom:0; // type.scss override
+    dt {
+      margin-bottom: 1rem;
+       > a {  
+         background-color: #009add!important;  
+         border-bottom:0 !important;  
+        //  -webkit-border-radius: .3rem;  
+        //  -moz-border-radius: .3rem;  
+        //  border-radius: .3rem;
+         font-family: $font-family-meseo-sans-serif;
+         font-size: floor(($font-size-base * 1.3));
+         font-weight: $font-weight-500;
+         text-decoration: none;
+         &.accordion__title--no-pad {
+           padding:0;
+         }
+         > .accordion__title--color {
+          padding:0;
+           > span {
+            -webkit-border-radius: .3rem;
+            -moz-border-radius: .3rem;
+            border-radius: .3rem;
+            display: block;
+            padding: 10px 15px 10px 50px;
+           }
+         }
+         > span {
+          // -webkit-border-radius: .3rem;
+          // -moz-border-radius: .3rem;
+          // border-radius: .3rem;
+          display: block;
+          padding: 10px 15px 10px 50px;
+          color: #fff;
+          cursor: pointer;
+          -webkit-transition: background-color 300ms;
+          transition: background-color 300ms;
+        }
+      }
+    }
+    dd {
+      padding: 0 15px 15px!important
+    }
+  }
+}
+.ckeditor-accordion-container > dl dd:first-of-type {
+  display: none;
+}

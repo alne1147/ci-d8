@@ -1,0 +1,62 @@
+.main-container {
+  background-color:$color-white;
+  flex: 1;
+  .content {
+    > .field--name-body {
+      h1,h2,h3,h4,h5,h6 {
+        font-family: $font-family-sans-serif;
+      }
+      > h1:nth-child(1),
+      > h2:nth-child(1),
+      > h3:nth-child(1),
+      > h4:nth-child(1),
+      > h5:nth-child(5),
+      > h6:nth-child(6) {
+        line-height:1;
+        margin-top: 0;
+        margin-bottom:18px;
+      }
+      a {
+        border-bottom: 1px solid $link-color;
+        &.btn {
+          border-bottom:none;
+        }
+        &:hover.btn {
+          border-bottom:none;
+        }
+        &:hover {
+          text-decoration: none;
+          border-bottom: 1px solid $link-hover-color;
+        }
+      }
+    }
+    .paragraph--type--bp-accordion {
+      width: 100%;
+    }
+  }
+  .field--name-field-article-type {
+    clear: left;
+  }
+  .author_date {
+    float: left;
+    margin-right:1em;
+  }
+  .paragraph--color {
+    border-radius: $border-radius;
+  }
+  .article_byline {
+    margin: 0 0 12.5px;
+  }
+}
+.region-content
+{
+    margin-bottom: 1em;
+}
+.field--name-body {
+  img.align-left {
+    padding: 10px 20px 10px 10px;
+  }
+  img.align-right {
+    padding: 10px 10px 10px 20px;
+  }
+}

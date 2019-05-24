@@ -1,0 +1,142 @@
+  /* FOOTER
+ 1. <footer> element styling
+ 2. Global Footer
+    - These styles are set in the page.html.twig template.
+    - The Global Footer is controlled in code by the drupal themer.
+ 3. Colorado.gov logo
+ 4. Content Footer
+    - These styles are set in the page.html.twig template.
+    - The Content Footer is controlled by the site authors.
+ */
+
+//[1]
+footer {
+  background-color: $color-brand-slate;
+}
+
+//[2]
+.global__footer-color {
+  background-color: $color-brand-slate;
+}
+.footer__global-footer {
+  background-color: rgba(0,0,0,0.1);
+  padding: 18px 0;
+  &--links {
+    padding-left: 0;
+    //opacity: .64;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      text-align: left;
+      margin: 0;
+    }
+    li {
+      color: #fff;
+      font-size: 14px;
+      font-weight: $font-weight-100;
+      display: inline;
+      list-style-type: none;
+      &:after {
+        content: "|";
+        padding: 0 2px 0 6px;
+      }
+      &:last-child:after {
+        content:"";
+      }
+      a {
+        color: #fff;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// [3]
+.logo--cogov {
+  background-image: url(../images/cogov_C_logo-white.svg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  display:block;
+  width: 164px;
+  height: 28px;
+  //opacity: .64;
+}
+@media (min-width: $screen-sm) {}
+@media (min-width: $screen-md) {
+  .logo--cogov {
+    float: right;
+  }
+}
+
+// [4]
+.footer__content-footer {
+  .block-block-content {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .paragraph {
+    &.paragraph--type--bp-columns {
+      .paragraph--type--bp-columns__1col,
+      .paragraph--type--bp-columns__2col,
+      .paragraph--type--bp-columns__3col,
+      .paragraph--type--bp-columns__4col,
+      .paragraph--type--bp-columns__5col,
+      .paragraph--type--bp-columns__6col {
+        padding-left: 0;
+        &:last-child {
+          padding-right:0;
+        }
+        &:nth-child(n+2) {
+          .paragraph--type--bp-simple {
+            .paragraph__column {
+              @media (max-width: $screen-sm-min) {
+                padding-top:5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    > .paragraph__column {
+      color: #fff;
+      h1,h2,h3,h4,h5,h6 {
+        font-family: $font-family-sans-serif;
+        margin-bottom: 26px;
+        text-transform: uppercase;
+      }
+      ul {
+        list-style-type: none;
+        padding:0;
+        > li {
+          margin-bottom: 12px;
+        }
+      }
+      a {
+        color: #fff;
+        border-bottom:1px solid #fff;
+        &.btn {
+          border-bottom:none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &.paragraph--color {
+      > .paragraph__column {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .paragraph .paragraph__column--container-wrapper .paragraph.paragraph__card>.paragraph__column>.paragraph__title {
+    background-color: transparent;
+  }
+  .field--name-field-card-title {
+    color: $color-white;
+    font-size: floor(($font-size-base * 1.2));
+    font-weight:$font-weight-500;
+    margin-bottom:5px;
+    padding:9px;
+  }
+}

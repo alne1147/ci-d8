@@ -1,0 +1,43 @@
+/* Row Slider and Card Carousel
+ 1. Row Slider
+ */
+
+// [1]
+.slick__slider {
+  .paragraph__column--container-wrapper {
+    .container {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+.slick-arrow {
+  @media (max-width: $screen-xs-min) {
+    width: 18px
+  }
+  &:before {
+    font-family: FontAwesome;
+    font-size: 36px;
+    color: $color-brand-slate;
+    @media (max-width: $screen-xs-min) {
+      font-size: 28px;
+    }
+  }
+  &.slick-next {
+    &:before {
+      position: absolute;
+      right: 10px;
+      top: 25%;
+      content: '\f105';
+    }
+  }
+  &.slick-prev {
+    &:before {
+      position: absolute;
+      left: 10px;
+      top: 25%;
+      content: '\f104';
+    }
+  }
+}
