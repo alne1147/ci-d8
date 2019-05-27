@@ -8,7 +8,7 @@ jobs:
       - run:
           name: "Cache Clear"
           command: |
-            cd /docroot
+            cd docroot
       - run:
                 name: run composer install to get the vendor directory
                 command: composer install
