@@ -2,17 +2,9 @@ version: 2.0
 jobs:
   build:
     docker:
-    - image: quay.io/pantheon-public/build-tools-ci:4.x
+    - image: cibuilds/drupal:latest
     steps:
       - checkout
       - run:
-          name: "Cache Clear"
-          command: |
-            cd docroot
-      - run:
-                name: run composer install to get the vendor directory
-                command: composer install
-
-      - run:
-          name: Check current version of drush
-          command: drush st
+                name: Where am I?
+                command: 'cd "/root/project/docroot" && composer require drush/drush; drush st'
