@@ -4,13 +4,7 @@ jobs:
     docker:
     - image: cibuilds/drupal:latest
     steps:
-            
+      - checkout
       - run:
-                name: run composer install to get the vendor directory
-                command: |
-                cd docroot
-                composer install
-
-      - run:
-          name: Check current version of drush
-          command: drush st
+                name: Where am I?
+                command: pwd
