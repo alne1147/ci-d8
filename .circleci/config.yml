@@ -2,16 +2,17 @@ version: 2.0
 jobs:
   build:
     docker:
-      - image: juampynr/drupal8ci:latest
+    - image: quay.io/pantheon-public/build-tools-ci:4.x
     steps:
       - checkout
       - run:
-          name: "Update Node.js and npm"
+          name: "Cache Clear"
           command: |
-            curl -sSL "https://nodejs.org/dist/v11.10.0/node-v11.10.0-linux-x64.tar.xz" | sudo tar --strip-components=2 -xJ -C /usr/local/bin/ node-v11.10.0-linux-x64/bin/node
-            curl https://www.npmjs.com/install.sh | sudo bash
-            cd /docroot
-            drush cr
+            cd docroot
       - run:
-          name: Check current version of node
-          command: node -v
+                name: run composer install to get the vendor directory
+                command: composer install
+
+      - run:
+          name: Check current version of drush
+          command: drush st
