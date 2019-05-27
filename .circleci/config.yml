@@ -13,3 +13,12 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+dependencies:
+  pre:
+    - sudo apt-get update; sudo apt-get install ruby-sass
+
+test:
+  pre:
+    - mkdir app/css
+    - sass scss/app.scss:app/css/app.css
