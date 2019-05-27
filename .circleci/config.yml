@@ -2,7 +2,7 @@ version: 2.0
 jobs:
   build:
     docker:
-    - image: quay.io/pantheon-public/build-tools-ci:4.x
+    - image: cibuilds/drupal:latest
     steps:
       - checkout
       - run:
