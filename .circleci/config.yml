@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
                 name: Where am I?
-                command: pwd; ls;cd docroot; drush st;
+                command: cd "/root/project/docroot" && composer require drush/drush; drush st;
