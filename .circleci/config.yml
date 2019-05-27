@@ -4,14 +4,12 @@ jobs:
     docker:
     - image: cibuilds/drupal:latest
     steps:
-      - checkout
-      - run:
-          name: "Cache Clear"
-          command: |
-            cd docroot
+            
       - run:
                 name: run composer install to get the vendor directory
-                command: composer install
+                command: |
+                cd docroot
+                composer install
 
       - run:
           name: Check current version of drush
