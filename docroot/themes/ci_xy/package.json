@@ -2,7 +2,7 @@
   "name": "ci_xy",
   "version": "0.0.1",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.27.10",
     "gulp": "^3.9.1",
     "gulp-babel": "^5.2.1",
     "gulp-concat": "^2.6.1",
