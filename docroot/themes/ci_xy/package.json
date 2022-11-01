@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "devDependencies": {
     "browser-sync": "^2.24.4",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^5.2.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^2.2.0",
     "gulp-react": "^3.0.1",
